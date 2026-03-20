@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuongPhamMinhTri - Test</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>DuongPhamMinhTri</h1>
+        <p class="subtitle">Trang test Spring Boot + Thymeleaf</p>
+
+        <div class="card">
+            <h2>Chào mừng</h2>
+            <p>Đây là trang HTML và CSS cơ bản để bạn kiểm tra bài. Nếu thấy trang này và giao diện đẹp thì cấu hình đã chạy đúng.</p>
+        </div>
+
+        <div class="card">
+            <h2>Trạng thái</h2>
+            <p th:text="${message} ?: 'Server đang chạy bình thường.'">Server đang chạy bình thường.</p>
+            <button class="btn" type="button" onclick="alert('Test OK!')">Bấm để test</button>
+        </div>
+
+        <p class="footer">Spring Boot 3 · Thymeleaf</p>
+    </div>
+</body>
+</html>
